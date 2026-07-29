@@ -1,4 +1,4 @@
-# SmartRepair Lager Online v4.4
+# SmartRepair Lager Online v4.5
 
 Online-Lagerverwaltung für eine Handy-Reparaturwerkstatt.
 
@@ -36,5 +36,9 @@ Die kostenlose Render-PostgreSQL-Datenbank ist nur zum Testen geeignet und läuf
 
 Das Passwort niemals in GitHub-Dateien speichern. Es wird ausschließlich als geheime Environment Variable in Render gesetzt.
 
-## v4.4 fix
+## v4.5 fix
 Die Benutzeroberfläche ist zusätzlich direkt in `server.js` eingebettet. Dadurch funktioniert die Startseite auch dann, wenn der Ordner `public` beim GitHub-Upload fehlt.
+
+
+## v4.5 Login-Fix
+Beim Start wird das Admin-Konto mit `ADMIN_EMAIL` und `ADMIN_PASSWORD` aus Render aktualisiert. Dadurch gilt nach jedem Deploy genau das in Render eingetragene Passwort.
